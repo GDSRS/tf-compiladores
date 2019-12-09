@@ -1,0 +1,19 @@
+[build-system]
+requires = ["flit"]
+build-backend = "flit.buildapi"
+
+
+[tool.flit.metadata]
+module = "meme"
+author = "Guilherme Sant_Ana"
+author-email = "guilherme.sant_ana@outlook.com"
+home-page = "http://github.com/fabiommendes/lispy/"
+classifiers = ["License :: OSI Approved :: MIT License"]
+requires = [
+    "click",
+    "lark-parser",
+]
+
+
+[tool.flit.scripts]
+meme = "meme.__main__:main"
