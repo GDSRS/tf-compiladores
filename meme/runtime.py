@@ -39,7 +39,11 @@ def eval(x, env=None):
     elif head == Symbol.SETTEXT:
         variable,position,text = args
         variable = eval(variable,env)
-        variable[1].text(position,text,fill='rgb(0,204,0)',font=env[Symbol('font')])
+        try:
+            font = env[Symbol('font')]
+        except KeyError:
+            font = None
+        variable[1].text(position,text,fill='rgb(0,204,0)',font=font)
 
     elif head == Symbol.SAVE:
         variable, name = args

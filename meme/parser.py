@@ -14,7 +14,6 @@ class LispTransformer(InlineTransformer):
 
     def string(self, string):
         string = string.replace('\\t', '\t').replace('\\"','\"').replace('\\n','\n')[1:-1]
-        print("String: ",string)
         return string
 
     def settext(self,variable,x,y,text):

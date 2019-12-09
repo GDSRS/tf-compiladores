@@ -21,6 +21,7 @@
 
 ?expr : attr
       | imageconfiguration
+      | atom
 
 // Terminais
 SYMBOL.0  : /[-!+\/*@$%^&~<>?|\\\w=]+/
