@@ -13,7 +13,7 @@ meme==0.1.0
 more-itertools==7.2.0
 packaging==19.2
 pathlib2==2.3.5
-Pillow==6.2.1
+Pillow==8.1.1
 pluggy==0.13.0
 py==1.8.0
 pyparsing==2.4.4
